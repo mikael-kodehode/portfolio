@@ -63,8 +63,5 @@ h1 {
     opacity: 0;
 }
 @media (min-width: 950px) {
-    .main-article {
-    }
-    .pitch-paragraph {
-    }
+
 }
