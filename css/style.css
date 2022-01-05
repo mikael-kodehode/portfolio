@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background-color:rgb(10, 8, 8);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+img {
+    width: 100%;
+}
+
+/* ---------------
+    TYPOGROPHY
+------------------ */
+
+h1 {
+    margin-bottom: 0;
+    padding: 1.3em;
+    text-align: center;
+}
+
+/* ---------------
+    LAYOUT
+------------------ */
+/* NAV */
+
+.nav-ul {
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 1em;
+    margin: 0 auto;
+}
+.nav-link {
+    color:inherit;
+    text-decoration: none;
+    padding: .4em 0;
+}
+.active-page {
+    border-bottom: 2px solid white;
+}
+
+/* HOME */
+.main-article {
+    width: 90%;
+    margin: 0 auto;
+}
+.pitch-paragraph {
+    background-color: rgb(161, 241, 0);
+    color: rgb(10, 8, 8);
+    font-size: 1.125rem;
+    padding: 1em;
+    line-height: 1.2rem;
+    max-width: 450px;
+    margin: 1em auto;
+}
+.hidden-elements {
+    opacity: 0;
+}
+@media (min-width: 950px) {
+    .main-article {
+    }
+    .pitch-paragraph {
+    }
+}
