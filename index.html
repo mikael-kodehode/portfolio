@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,15 +26,16 @@
         </nav>
     </header>
     <main>
+        <!-- MAIN PAGE -->
         <div id="home-content" class="main-content">
             <div class="scene">
                 <div class="cube">
-                  <div class="cube__face cube__face--front">resilient</div>
-                  <div class="cube__face cube__face--back">persistent</div>
-                  <div class="cube__face cube__face--right">agile</div>
-                  <div class="cube__face cube__face--left">strong</div>
-                  <div class="cube__face cube__face--top">alluring</div>
-                  <div class="cube__face cube__face--bottom">endless</div>
+                  <div class="cube__face cube__face--front">Systematisk</div>
+                  <div class="cube__face cube__face--back">Løsningsorientert</div>
+                  <div class="cube__face cube__face--right">Punktlig</div>
+                  <div class="cube__face cube__face--left">Ansvarsbevisst</div>
+                  <div class="cube__face cube__face--top">Imøtekommende</div>
+                  <div class="cube__face cube__face--bottom">Effektiv</div>
                 </div>
             </div>
             <p class="radio-group">
@@ -57,17 +58,38 @@
                     <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
                 </label><br>
             </p>
-            <article class="main-article">
-                <p class="pitch-paragraph"  id="p1">Hei! Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende.</p>
+            <article class="main-article pitch-paragraph">
+                <ul class="p-nav-ul">
+                    <li class="p-nav-list active-p" id="first-p">First</li>
+                    <li class="p-nav-list" id="second-p">Second</li>
+                    <li class="p-nav-list" id="third-p">Third</li>
+                </ul>
+                <p class="" id="p1">Hei! Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende.</p>
     
-                <!-- <p class="pitch-paragraph middle" id="p2">Jeg har engasjert meg i koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet med HTML og CSS, men i løpet av det kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p> -->
+                <p class="hidden" id="p2">Jeg har engasjert meg i koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet med HTML og CSS, men i løpet av det kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
                 
-                <!-- <p class="pitch-paragraph" id="p3">Jeg kommer fra Mjøsas reelle hovedstad, Gjøvik og flyttet til Stavanger 2017 for skole, men det endte med at jeg forble i Stavanger pga at jeg fant meg jobb. Personlig er jeg veldig interessert i sport, rage quiter sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, eventuelt sjakk puzzles og repetisjonskoding på app på kvelden for å koble av fra prosjektene.</p> -->
+                <p class="hidden" id="p3">Jeg kommer fra Mjøsas reelle hovedstad, Gjøvik og flyttet til Stavanger 2017 for skole, men det endte med at jeg forble i Stavanger pga at jeg fant meg jobb. Personlig er jeg veldig interessert i sport, rage quiter sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, eventuelt sjakk puzzles og repetisjonskoding på app på kvelden for å koble av fra prosjektene.</p>
             </article>
         </div>
+
+        <!-- PROJECTS PAGE -->
         <div id="projects-content" class="main-content hidden">
 
+            <div class="flex heart-container">
+                <form oninput="result.value=parseInt(rate.value)">
+                    <input type="range" name="rate" id="rate" value="60" min="0" max="210">
+                    <output id="rate-output" name="result" for="rate">60</output><br>
+                    <label for="rate">Accurate speed of heart rate</label>
+                </form>
+                <div id="heart-element">
+                    <div id="left"></div>
+                    <div id="right"></div>
+                    <div id="bottom"></div>
+                </div>
+            </div>    
         </div>
+
+        <!-- CV PAGE -->
         <div id="cv-content" class="main-content hidden">
             <div class="intro">
                 <h2>Navn</h2>
