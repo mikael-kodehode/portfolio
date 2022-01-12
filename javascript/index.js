@@ -78,12 +78,12 @@ thirdPBtn.addEventListener("click", function() {
 
 // Heartrate simulator
 const rate = document.querySelector("#rate");
-const heartContainer = document.querySelector("#heart-container")
+const heartEl = document.querySelector("#heart-element")
 
 rate.addEventListener("input", function() {
     let x = rate.value;
     let y = (60 / x) 
-    heartContainer.style.animation = "container ease-out " + y + "s infinite";
+    heartEl.style.animation = "container ease-out " + y + "s infinite";
 })
 
 const cube = document.querySelector('.cube');
