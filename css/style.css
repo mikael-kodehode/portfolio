@@ -105,6 +105,9 @@ article p {
   .pitch-paragraph {
     font-size: 1.2rem;
   }
+  body {
+      font-size: 1.135rem
+  }
 }
 
 .scene,
