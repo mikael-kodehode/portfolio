@@ -13,10 +13,13 @@ body {
     TYPOGROPHY
 ------------------ */
 
+h1,
+h2 {
+  text-align: center;
+}
 h1 {
   margin-bottom: 0;
   padding: 1rem;
-  text-align: center;
 }
 
 /* ---------------
@@ -70,7 +73,7 @@ h1 {
   border-bottom: 2px solid black;
 }
 
-.pitch-paragraph {
+.paragraph {
   color: rgb(10, 8, 8);
   margin: 0;
   padding: 1em 2em;
@@ -79,7 +82,7 @@ h1 {
   transition: background-color 1s
 }
 
-.pitch-paragraph:hover {
+.paragraph:hover {
   background-color:rgb(219, 235, 0)
 }
 
@@ -88,7 +91,10 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
-
+.container-flex {
+  display: flex;
+  justify-content: center;
+}
 .hidden {
   display: none;
 }
@@ -96,9 +102,22 @@ h1 {
 article p {
   margin-bottom: 0;
 }
+.a-links {
+  color: rgb(161, 241, 0);
+}
 
+.a-links:hover,
+.a-links:focus {
+  color:rgb(219, 235, 0)
+}
 #projects-content {
   margin-top: 2em;
+}
+.cv-ul {
+  list-style-type: none;
+}
+.left-li-group {
+  text-align: right;
 }
 
 @media (min-width: 700px) {
@@ -106,10 +125,11 @@ article p {
     font-size: 1.2rem;
   }
   body {
-      font-size: 1.135rem
+    font-size: 1.135rem
   }
 }
 
+/* CUBE */
 .scene,
 .cube,
 .cube__face {

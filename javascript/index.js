@@ -4,6 +4,12 @@ const cvBtn = document.getElementById("cv")
 const firstPBtn = document.querySelector("#first-p")
 const secondPBtn = document.querySelector("#second-p")
 const thirdPBtn = document.querySelector("#third-p")
+const exp1 = document.querySelector("#exp-1")
+const exp2 = document.querySelector("#exp-2")
+const exp3 = document.querySelector("#exp-3")
+const exp4 = document.querySelector("#exp-4")
+const exp5 = document.querySelector("#exp-5")
+
 
 const homeEl = document.getElementById("home-content")
 const projectsEl = document.getElementById("projects-content")
@@ -11,6 +17,11 @@ const cvEl = document.getElementById("cv-content")
 const firstPEl = document.querySelector("#p1")
 const secondPEl = document.querySelector("#p2")
 const thirdPEl = document.querySelector("#p3")
+const epinionEl = document.querySelector("#epinion")
+const bunnprisEl = document.querySelector("#bunnpris")
+const norstatEl = document.querySelector("#norstat")
+const unicallEl = document.querySelector("#unicall")
+const teleConnectEl = document.querySelector("#tele-connect")
 
 function removeActivePage() {
     homeBtn.classList.remove("active-page")
@@ -36,7 +47,20 @@ function removeP() {
     secondPEl.classList.add("hidden")
     thirdPEl.classList.add("hidden")
 }
-
+function removeActiveExp() {
+  exp1.classList.remove("active-p")
+  exp2.classList.remove("active-p")
+  exp3.classList.remove("active-p")
+  exp4.classList.remove("active-p")
+  exp5.classList.remove("active-p")
+}
+function removeExp() {
+  epinionEl.classList.add("hidden")
+  bunnprisEl.classList.add("hidden")
+  norstatEl.classList.add("hidden")
+  unicallEl.classList.add("hidden")
+  teleConnectEl.classList.add("hidden")
+}
 homeBtn.addEventListener("click", function() {
     removeContent()
     homeBtn.classList.add("active-page")
@@ -74,6 +98,36 @@ thirdPBtn.addEventListener("click", function() {
   removeP()
   thirdPBtn.classList.add("active-p")
   thirdPEl.classList.remove("hidden")
+})
+exp1.addEventListener("click", function() {
+  removeActiveExp()
+  removeExp()
+  exp1.classList.add("active-p")
+  epinionEl.classList.remove("hidden")
+})
+exp2.addEventListener("click", function() {
+  removeActiveExp()
+  removeExp()
+  exp2.classList.add("active-p")
+  bunnprisEl.classList.remove("hidden")
+})
+exp3.addEventListener("click", function() {
+  removeActiveExp()
+  removeExp()
+  exp3.classList.add("active-p")
+  norstatEl.classList.remove("hidden")
+})
+exp4.addEventListener("click", function() {
+  removeActiveExp()
+  removeExp()
+  exp4.classList.add("active-p")
+  unicallEl.classList.remove("hidden")
+})
+exp5.addEventListener("click", function() {
+  removeActiveExp()
+  removeExp()
+  exp5.classList.add("active-p")
+  teleConnectEl.classList.remove("hidden")
 })
 
 // Heartrate simulator

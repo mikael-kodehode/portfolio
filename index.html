@@ -58,13 +58,13 @@
                     <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
                 </label><br>
             </p>
-            <article class="main-article pitch-paragraph">
+            <article class="main-article paragraph">
                 <ul class="p-nav-ul">
-                    <li class="p-nav-list active-p" id="first-p">First</li>
-                    <li class="p-nav-list" id="second-p">Second</li>
-                    <li class="p-nav-list" id="third-p">Third</li>
+                    <li class="p-nav-list active-p" id="first-p">I</li>
+                    <li class="p-nav-list" id="second-p">II</li>
+                    <li class="p-nav-list" id="third-p">III</li>
                 </ul>
-                <p class="" id="p1">Hei! Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende.</p>
+                <p class="" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
     
                 <p class="hidden" id="p2">Jeg har engasjert meg i koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet med HTML og CSS, men i løpet av det kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
                 
@@ -74,7 +74,6 @@
 
         <!-- PROJECTS PAGE -->
         <div id="projects-content" class="main-content hidden">
-
             <div class="flex heart-container">
                 <form oninput="result.value=parseInt(rate.value)">
                     <input type="range" name="rate" id="rate" value="60" min="0" max="210">
@@ -86,44 +85,113 @@
                     <div id="right"></div>
                     <div id="bottom"></div>
                 </div>
-            </div>    
+            </div>
+            <h2><a class="a-links" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
+            <div class="container">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
         </div>
 
         <!-- CV PAGE -->
         <div id="cv-content" class="main-content hidden">
             <div class="intro">
-                <h2>Navn</h2>
-                <ul>
-                    <li>Nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                </ul>
+                <h2>Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
+                <div class="container-flex">
+                    <div>
+                        <ul class="cv-ul left-li-group">
+                            <li>Telefon</li>
+                            <li>E-post</li>
+                            <li>Språk</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="cv-ul">
+                            <li>479 04 989</li>
+                            <li>mikael.odegaard@gmail.com</li>
+                            <li>Norsk, Engelsk</li>
+                        </ul>
+                    </div>
+                </div>
             </div> <!--closing main-->
-            <div class="erfaring">
-                <ul>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-                    <li>nøkkelord</li>
-        
-                </ul>
+            <div class="paragraph main-article">                
+                <div class="experience">
+                    <ul class="p-nav-ul">
+                        <li class="p-nav-list active-p" id="exp-1">Epinion</li>
+                        <li class="p-nav-list" id="exp-2">Bunnpris</li>
+                        <li class="p-nav-list" id="exp-3">Norstat</li>
+                        <li class="p-nav-list" id="exp-4">UniCall</li>
+                        <li class="p-nav-list" id="exp-5">Tele Connect</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="" id="epinion">
+                        <p>
+                            Mar '18 - Apr '20 <br>
+                            Epinion Norge AS avd. Stavanger <br>
+                            Administrasjonsmedarbeider - Telefonintervjuer
+                        </p>
+                        <ul>
+                            <li>Datainnsamling</li>
+                            <li>Intervjuarbeid</li>
+                            <li>Markedsundersøkelser i henhold til Norsk Markedsanalyseforening
+                                sine retningslinjer</li>
+                            <li>SPSS Dimension</li>
+                            <li>Administrativt arbeid for å avlaste skiftledere</li>
+                            <li>Besvare kundehenvendelser via telefon og e-post</li>
+                            <li>Avløse skiftledere</li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="bunnpris">
+                        <p>
+                            Des '17 - Feb '19 <br>
+                            Bunnpris Bragetunet <br>
+                            Butikkmedarbeider
+                        </p>
+                        <ul>
+                            <li>Kundebehandling</li>
+                            <li>Kassearbeid</li>
+                            <li>Forefallende butikkarbeid</li>
+                            <li>Markedsføring</li>
+                            <li>PostNord MyPack pakkeutlevering</li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="norstat">
+                        <p>
+                            Feb '13 - Mai '15 <br>
+                            Norstat Lillehammer AS <br>
+                            Intervjuer
+                        </p>
+                        <ul>
+                            <li>Intervju ansikt til ansikt</li>
+                            <li>Telefonintervju</li>
+                            <li>Rekruteringer av personer til fokusgrupper</li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="unicall">
+                        <p>
+                            Aug '12 - Jan '13 <br>
+                            UniCall Lillehammer AS <br>
+                            Telefonselger
+                        </p>
+                        <ul>
+                            <li>Kundebehandling</li>
+                            <li>Oppsøkende salg</li>
+                        </ul>
+                    </div>
+                    <div class="hidden" id="tele-connect">
+                        <p>
+                            Jan '12 - Mai '12 <br>
+                            Tele Connect Gjøcik AS <b></b>
+                            Telefonselger
+                        </p>
+                        <ul>
+                            <li>Kundebehandling</li>
+                            <li>Oppsøkende salg</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="about">
-                <p>about</p>
-            </div>
-            <div class="traits">
-                <ul>
-                    <li>Vekterutdanning 1-3</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Python</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-        
         </div>
     </main>
     <script src="javascript/index.js"></script>       
