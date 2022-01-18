@@ -21,6 +21,9 @@ h1 {
   margin-bottom: 0;
   padding: 1rem;
 }
+h2 {
+  margin: 1em auto;
+}
 
 /* ---------------
     LAYOUT
@@ -103,12 +106,15 @@ article p {
   margin-bottom: 0;
 }
 .a-links {
-  color: rgb(161, 241, 0);
+  color: rgba(161, 241, 0, 1);
+  transition: background-color 2s, color 1s;
+  padding: 0.8em;
 }
 
 .a-links:hover,
 .a-links:focus {
-  color:rgb(219, 235, 0)
+  color:rgb(10, 8, 8);
+  background-color: rgba(161, 241, 0, 0.7);
 }
 #projects-content {
   margin-top: 2em;
@@ -119,13 +125,29 @@ article p {
 .left-li-group {
   text-align: right;
 }
+.github-projects{
+  padding: 0.7em;
+}
+
+.github-projects a{
+  color: white;
+}
+.github-projects:hover,
+.github-projects:focus {
+  color: rgba(161, 241, 0, 1);
+}
+.cv-nav-li{
+  display: inline-block;
+  margin: 0.5em;
+  cursor:pointer;
+}
 
 @media (min-width: 700px) {
   .pitch-paragraph {
     font-size: 1.2rem;
   }
   body {
-    font-size: 1.135rem
+    font-size: 1.135rem;
   }
 }
 
