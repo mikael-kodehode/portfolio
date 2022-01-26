@@ -147,10 +147,13 @@ article p {
 .github-projects:focus {
   color: rgba(161, 241, 0, 1);
 }
+#cv-nav-ul {
+  padding: 0;
+}
 .cv-nav-li{
   display: inline-block;
   margin: 0.5em;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {
