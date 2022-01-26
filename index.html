@@ -2,228 +2,244 @@
 <html lang="no">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikael Svartrud Ødegaard</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikael Svartrud Ødegaard</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;900&display=swap" rel="stylesheet">    
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Mikael Svartrud Ødegaard</h1>
+  <header>
+    <div>
+      <h1>Mikael Svartrud Ødegaard</h1>
+    </div>
+    <nav>
+      <ul class="nav-ul">
+        <li class="nav-list"><a id="home" class="nav-link active-page" href="#">Hjem</a></li>
+        <li class="nav-list"><a id="projects" class="nav-link" href="#">Prosjekter</a></li>
+        <li class="nav-list"><a id="cv" class="nav-link" href="#">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <!-- MAIN PAGE -->
+    <div id="home-content" class="main-content">
+      <div class="scene">
+        <div class="cube">
+          <div class="cube__face cube__face--front">Systematisk</div>
+          <div class="cube__face cube__face--back">Løsningsorientert</div>
+          <div class="cube__face cube__face--right">Punktlig</div>
+          <div class="cube__face cube__face--left">Ansvarsbevisst</div>
+          <div class="cube__face cube__face--top">Imøtekommende</div>
+          <div class="cube__face cube__face--bottom">Effektiv</div>
         </div>
-        <nav>
-            <ul class="nav-ul">
-                <li class="nav-list"><a id="home" class="nav-link active-page" href="#">Hjem</a></li>
-                <li class="nav-list"><a id="projects" class="nav-link" href="#">Prosjekter</a></li>
-                <li class="nav-list"><a id="cv" class="nav-link" href="#">CV</a></li>
+      </div>
+      <p class="radio-group">
+      <label>
+        <input type="radio" name="rotate-cube-side" value="front" checked /> front
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="right" /> right
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="back" /> back
+      </label><br>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="left" /> left
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="top" /> top
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+      </label><br>
+      </p>
+      <article class="main-article paragraph">
+        <ul class="p-nav-ul">
+          <li class="p-nav-list active-p" id="first-p">I</li>
+          <li class="p-nav-list" id="second-p">II</li>
+          <li class="p-nav-list" id="third-p">III</li>
+        </ul>
+        <p class="" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
+
+        <p class="hidden" id="p2">Jeg har engasjert meg i koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet med HTML og CSS, men i løpet av det kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
+
+        <p class="hidden" id="p3">Jeg kommer fra Mjøsas reelle hovedstad, Gjøvik og flyttet til Stavanger 2017 for skole, men det endte med at jeg forble i Stavanger pga at jeg fant meg jobb. Personlig er jeg veldig interessert i sport, rage quiter sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, eventuelt sjakk puzzles og repetisjonskoding på app på kvelden for å koble av fra prosjektene.</p>
+      </article>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects-content" class="main-content hidden">
+      <div class="flex heart-container">
+        <form oninput="result.value=parseInt(rate.value)">
+          <input type="range" name="rate" id="rate" value="60" min="0" max="210">
+          <output id="rate-output" name="result" for="rate">60</output><br>
+          <label for="rate">Accurate speed of heart rate</label>
+        </form>
+        <div id="heart-element">
+          <div id="left"></div>
+          <div id="right"></div>
+          <div id="bottom"></div>
+        </div>
+      </div>
+      <h2><a class="a-links" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
+      <div class="container-flex">
+        <div class="col">
+          <ul>
+            <li class="github-projects"><a href="">Landingpage - <br>Myter om nordlyset og Nordpolen</a></li>
+            <li class="github-projects"><a href="https://github.com/mikael-kodehode/firstPythonGame">PythonGame</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li class="github-projects"><a href="https://github.com/mikael-kodehode/Caesar">Parallax page - Caesar</a></li>
+            <li class="github-projects"><a href="https://github.com/mikael-kodehode/pltable">Premier League tabell</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV PAGE -->
+    <div id="cv-content" class="main-content hidden">
+      <div class="intro">
+        <h2>Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
+        <div class="container-flex">
+          <div>
+            <ul class="cv-ul left-li-group">
+              <li>Telefon</li>
+              <li>E-post</li>
+              <li>Språk</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- MAIN PAGE -->
-        <div id="home-content" class="main-content">
-            <div class="scene">
-                <div class="cube">
-                  <div class="cube__face cube__face--front">Systematisk</div>
-                  <div class="cube__face cube__face--back">Løsningsorientert</div>
-                  <div class="cube__face cube__face--right">Punktlig</div>
-                  <div class="cube__face cube__face--left">Ansvarsbevisst</div>
-                  <div class="cube__face cube__face--top">Imøtekommende</div>
-                  <div class="cube__face cube__face--bottom">Effektiv</div>
-                </div>
-            </div>
-            <p class="radio-group">
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="front" checked /> front
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="right" /> right
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="back" /> back
-                </label><br>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="left" /> left
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="top" /> top
-                </label>
-                <label>
-                    <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
-                </label><br>
+          </div>
+          <div>
+            <ul class="cv-ul">
+              <li>479 04 989</li>
+              <li>mikael.odegaard@gmail.com</li>
+              <li>Norsk, Engelsk</li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--closing cv intro-->
+      <div>
+        <ul>
+          <li id="exp-li" class="cv-nav-li active-page">Erfaring</li>
+          <li id="edu-li" class="cv-nav-li">Utdannelse</li>
+          <li id="misc-li" class="cv-nav-li">Kurs/Verv</li>
+        </ul>
+      </div> 
+      <!-- experience--> 
+      <div class="paragraph main-article" id="experience">               
+        <div class="experience-nav">
+          <ul class="p-nav-ul">
+            <li class="p-nav-list active-p" id="exp-1">Epinion</li>
+            <li class="p-nav-list" id="exp-2">Bunnpris</li>
+            <li class="p-nav-list" id="exp-3">Norstat</li>
+            <li class="p-nav-list" id="exp-4">UniCall</li>
+            <li class="p-nav-list" id="exp-5">Tele Connect</li>
+          </ul>
+        </div>
+        <div>
+          <div id="epinion">
+            <p>
+            Mar '18 - Apr '20 <br><br>
+            Epinion Norge AS avd. Stavanger <br>
+            Administrasjonsmedarbeider - Telefonintervjuer
             </p>
-            <article class="main-article paragraph">
-                <ul class="p-nav-ul">
-                    <li class="p-nav-list active-p" id="first-p">I</li>
-                    <li class="p-nav-list" id="second-p">II</li>
-                    <li class="p-nav-list" id="third-p">III</li>
-                </ul>
-                <p class="" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
-    
-                <p class="hidden" id="p2">Jeg har engasjert meg i koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet med HTML og CSS, men i løpet av det kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
-                
-                <p class="hidden" id="p3">Jeg kommer fra Mjøsas reelle hovedstad, Gjøvik og flyttet til Stavanger 2017 for skole, men det endte med at jeg forble i Stavanger pga at jeg fant meg jobb. Personlig er jeg veldig interessert i sport, rage quiter sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, eventuelt sjakk puzzles og repetisjonskoding på app på kvelden for å koble av fra prosjektene.</p>
-            </article>
+            <ul>
+              <li>Datainnsamling</li>
+              <li>Intervjuarbeid</li>
+              <li>Markedsundersøkelser i henhold til Norsk Markedsanalyseforenings retningslinjer</li>
+              <li>SPSS Dimension</li>
+              <li>Administrativt arbeid for å avlaste skiftledere</li>
+              <li>Besvare kundehenvendelser via telefon og e-post</li>
+              <li>Avløse skiftledere</li>
+            </ul>
+          </div>
+          <div class="hidden" id="bunnpris">
+            <p>
+            Des '17 - Feb '19 <br><br>
+            Bunnpris Bragetunet <br>
+            Butikkmedarbeider
+            </p>
+            <ul>
+              <li>Kundebehandling</li>
+              <li>Kassearbeid</li>
+              <li>Forefallende butikkarbeid</li>
+              <li>Markedsføring</li>
+              <li>PostNord MyPack pakkeutlevering</li>
+            </ul>
+          </div>
+          <div class="hidden" id="norstat">
+            <p>
+            Feb '13 - Mai '15 <br><br>
+            Norstat Lillehammer AS <br>
+            Intervjuer
+            </p>
+            <ul>
+              <li>Intervju ansikt til ansikt</li>
+              <li>Telefonintervju</li>
+              <li>Rekruteringer av personer til fokusgrupper</li>
+            </ul>
+          </div>
+          <div class="hidden" id="unicall">
+            <p>
+            Aug '12 - Jan '13 <br><br>  
+            UniCall Lillehammer AS <br>
+            Telefonselger
+            </p>
+            <ul>
+              <li>Kundebehandling</li>
+              <li>Oppsøkende salg</li>
+            </ul>
+          </div>
+          <div class="hidden" id="tele-connect">
+            <p>
+            Jan '12 - Mai '12 <br><br>
+            Tele Connect Gjøcik AS <b></b>
+            Telefonselger
+            </p>
+            <ul>
+              <li>Kundebehandling</li>
+              <li>Oppsøkende salg</li>
+            </ul>
+          </div>
         </div>
-
-        <!-- PROJECTS PAGE -->
-        <div id="projects-content" class="main-content hidden">
-            <div class="flex heart-container">
-                <form oninput="result.value=parseInt(rate.value)">
-                    <input type="range" name="rate" id="rate" value="60" min="0" max="210">
-                    <output id="rate-output" name="result" for="rate">60</output><br>
-                    <label for="rate">Accurate speed of heart rate</label>
-                </form>
-                <div id="heart-element">
-                    <div id="left"></div>
-                    <div id="right"></div>
-                    <div id="bottom"></div>
-                </div>
-            </div>
-            <h2><a class="a-links" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
-            <div class="container-flex">
-                <div class="col">
-                    <ul>
-                        <li class="github-projects"><a href="">Landingpage - <br>Myter om nordlyset og Nordpolen</a></li>
-                        <li class="github-projects"><a href="https://github.com/mikael-kodehode/firstPythonGame">PythonGame</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li class="github-projects"><a href="https://github.com/mikael-kodehode/Caesar">Parallax page - Caesar</a></li>
-                        <li class="github-projects"><a href="https://github.com/mikael-kodehode/pltable">Premier League tabell</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- CV PAGE -->
-        <div id="cv-content" class="main-content hidden">
-            <div class="intro">
-                <h2>Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
-                <div class="container-flex">
-                    <div>
-                        <ul class="cv-ul left-li-group">
-                            <li>Telefon</li>
-                            <li>E-post</li>
-                            <li>Språk</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="cv-ul">
-                            <li>479 04 989</li>
-                            <li>mikael.odegaard@gmail.com</li>
-                            <li>Norsk, Engelsk</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!--closing intro-->
-            <div>
-                <ul>
-                    <li id="exp-li" class="cv-nav-li active-page">Erfaring</li>
-                    <li id="edu-li" class="cv-nav-li">Utdannelse</li>
-                </ul>
-            </div>
-            <div class="paragraph main-article" id="experience">      <!-- experience-->          
-                <div class="experience-nav">
-                    <ul class="p-nav-ul">
-                        <li class="p-nav-list active-p" id="exp-1">Epinion</li>
-                        <li class="p-nav-list" id="exp-2">Bunnpris</li>
-                        <li class="p-nav-list" id="exp-3">Norstat</li>
-                        <li class="p-nav-list" id="exp-4">UniCall</li>
-                        <li class="p-nav-list" id="exp-5">Tele Connect</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="" id="epinion">
-                        <p>
-                            Mar '18 - Apr '20 <br><br>
-                            Epinion Norge AS avd. Stavanger <br>
-                            Administrasjonsmedarbeider - Telefonintervjuer
-                        </p>
-                        <ul>
-                            <li>Datainnsamling</li>
-                            <li>Intervjuarbeid</li>
-                            <li>Markedsundersøkelser i henhold til Norsk Markedsanalyseforenings retningslinjer</li>
-                            <li>SPSS Dimension</li>
-                            <li>Administrativt arbeid for å avlaste skiftledere</li>
-                            <li>Besvare kundehenvendelser via telefon og e-post</li>
-                            <li>Avløse skiftledere</li>
-                        </ul>
-                    </div>
-                    <div class="hidden" id="bunnpris">
-                        <p>
-                            Des '17 - Feb '19 <br><br>
-                            Bunnpris Bragetunet <br>
-                            Butikkmedarbeider
-                        </p>
-                        <ul>
-                            <li>Kundebehandling</li>
-                            <li>Kassearbeid</li>
-                            <li>Forefallende butikkarbeid</li>
-                            <li>Markedsføring</li>
-                            <li>PostNord MyPack pakkeutlevering</li>
-                        </ul>
-                    </div>
-                    <div class="hidden" id="norstat">
-                        <p>
-                            Feb '13 - Mai '15 <br><br>
-                            Norstat Lillehammer AS <br>
-                            Intervjuer
-                        </p>
-                        <ul>
-                            <li>Intervju ansikt til ansikt</li>
-                            <li>Telefonintervju</li>
-                            <li>Rekruteringer av personer til fokusgrupper</li>
-                        </ul>
-                    </div>
-                    <div class="hidden" id="unicall">
-                        <p>
-                            Aug '12 - Jan '13 <br><br>  
-                            UniCall Lillehammer AS <br>
-                            Telefonselger
-                        </p>
-                        <ul>
-                            <li>Kundebehandling</li>
-                            <li>Oppsøkende salg</li>
-                        </ul>
-                    </div>
-                    <div class="hidden" id="tele-connect">
-                        <p>
-                            Jan '12 - Mai '12 <br><br>
-                            Tele Connect Gjøcik AS <b></b>
-                            Telefonselger
-                        </p>
-                        <ul>
-                            <li>Kundebehandling</li>
-                            <li>Oppsøkende salg</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!--closing experience-->
-            <div class="paragraph main-article hidden" id="education"> <!--education-->
-                <div class="education">
-                    <p>
-                        Jan '13 - Jun '13 <br><br>
-                        Lillehammer videregående skole <br>
-                        Studiespesialisering <br>
-                        - Økonomi, markedsføring og samfunnsfag <br><br>
-                        Aug '10 - Jan '13 <br><br>
-                        Gjøvik videregående skole <br>
-                        Studiespesialisering <br>
-                        - Øknomi, markedsføring og samfunnsfag
-                    </p>
-                </div>
-            </div> <!--closing education-->
-        </div>
-    </main>
-    <script src="javascript/index.js"></script>       
+      </div> <!--closing experience-->
+      <!--education-->
+      <div class="paragraph main-article hidden" id="education">
+        <p>
+        Jan '13 - Jun '13 <br><br>
+        Lillehammer videregående skole <br>
+        Studiespesialisering <br>
+        - Økonomi, markedsføring og samfunnsfag <br><br>
+        Aug '10 - Jan '13 <br><br>
+        Gjøvik videregående skole <br>
+        Studiespesialisering <br>
+        - Øknomi, markedsføring og samfunnsfag
+        </p>
+      </div> <!--closing education-->
+      <div class="paragraph main-article hidden" id="misc-el">
+        <h3>Kurs</h3>
+        <ul>
+          <li>Vekterkurs trinn 1-3</li>
+        </ul>
+        <h3>Diverse verv i perioden 2010-2016</h3>
+        <ul>
+          <li>Frivillig vakt/medarbeider på diverse festivaler blant annet Nordland Musikkfestuke og Canal Street i Arendal</li>
+          <li>Frivillig sikkerhetsvakt på Skjærgårdsfestivalen i 4 år</li>
+          <li>Frivillig arbeider på Polarparty LAN i Tønsberg</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="small-text">Created by Mikael Svartrud Ødegaard</p>
+  </footer>
+  <script src="javascript/index.js"></script>       
 </body>
 
 </html>

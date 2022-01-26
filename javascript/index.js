@@ -11,6 +11,7 @@ const exp4 = document.querySelector("#exp-4")
 const exp5 = document.querySelector("#exp-5")
 const expLi = document.querySelector("#exp-li")
 const eduLi = document.querySelector("#edu-li")
+const miscLi = document.querySelector("#misc-li")
 
 const homeEl = document.getElementById("home-content")
 const projectsEl = document.getElementById("projects-content")
@@ -25,6 +26,7 @@ const unicallEl = document.querySelector("#unicall")
 const teleConnectEl = document.querySelector("#tele-connect")
 const expEl = document.querySelector("#experience")
 const eduEl = document.querySelector("#education")
+const miscEl = document.querySelector("#misc-el")
 
 function removeActivePage() {
     homeBtn.classList.remove("active-page")
@@ -67,10 +69,12 @@ function removeExp() {
 function removeCV() {
   experience.classList.add("hidden")
   education.classList.add("hidden")
+  miscEl.classList.add("hidden")
 }
 function removeActiveCV() {
   expLi.classList.remove("active-page")
   eduLi.classList.remove("active-page")
+  miscLi.classList.remove("active-page")
 }
 homeBtn.addEventListener("click", function() {
     removeContent()
@@ -151,6 +155,12 @@ eduLi.addEventListener("click", function() {
   removeCV()
   eduEl.classList.remove("hidden")
   eduLi.classList.add("active-page")
+})
+miscLi.addEventListener("click", function() {
+  removeActiveCV()
+  removeCV()
+  miscEl.classList.remove("hidden")
+  miscLi.classList.add("active-page")
 })
 // Heartrate simulator
 const rate = document.querySelector("#rate");
