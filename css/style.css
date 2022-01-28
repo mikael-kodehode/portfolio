@@ -119,14 +119,14 @@ h3 {
 article p {
   margin-bottom: 0;
 }
-.a-links {
+.big-link {
   color: rgba(161, 241, 0, 1);
   transition: background-color 2s, color 1s;
   padding: 0.8em;
 }
 
-.a-links:hover,
-.a-links:focus {
+.big-link:hover,
+.big-link:focus {
   color:rgb(10, 8, 8);
   background-color: rgba(161, 241, 0, 0.7);
 }
@@ -152,6 +152,9 @@ article p {
 }
 .github-projects a:hover,
 .github-projects a:focus {
+  color: rgba(161, 241, 0, 1);
+}
+.github-projects a:active {
   color: rgba(161, 241, 0, 1);
 }
 #cv-nav-ul {
