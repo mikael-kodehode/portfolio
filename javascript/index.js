@@ -28,6 +28,34 @@ const expEl = document.querySelector("#experience")
 const eduEl = document.querySelector("#education")
 const miscEl = document.querySelector("#misc-el")
 
+let language = "english"
+
+fetch("../jsons/english.json")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(e => console.log(e))
+async function pushLanguage(language) {
+
+  const res = await fetch(`${language}.json`)
+  const data = await res.json()
+  console.log(data)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function removeActivePage() {
     homeBtn.classList.remove("active-page")
     projectsBtn.classList.remove("active-page")
@@ -168,7 +196,7 @@ const heartEl = document.querySelector("#heart-element")
 
 rate.addEventListener("input", function() {
     let x = rate.value;
-    let y = (60 / x) 
+    let y = (60 / x)
     heartEl.style.animation = "container ease-out " + y + "s infinite";
 })
 
