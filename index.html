@@ -14,8 +14,10 @@
 </head>
 <body>
   <header>
+    <button type="button" id="english">English</button>
+    <button type="button" id="norwegian">Norwegian</button>
     <div>
-      <h1>Mikael Svartrud Ødegaard</h1>
+      <h1 id="title">Mikael Svartrud Ødegaard</h1>
     </div>
     <nav>
       <ul class="nav-ul">
@@ -59,75 +61,55 @@
         <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
       </label><br>
       </p>
-      <article class="main-article paragraph">
+      <article class="paragraph">
         <ul class="p-nav-ul">
-          <li class="p-nav-list active-p" id="first-p">I</li>
-          <li class="p-nav-list" id="second-p">II</li>
-          <li class="p-nav-list" id="third-p">III</li>
+          <li class="p-nav-list p-btn active-p" id="first-p">I</li>
+          <li class="p-nav-list p-btn" id="second-p">II</li>
+          <li class="p-nav-list p-btn" id="third-p">III</li>
         </ul>
-        <p class="" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
+        <p class="p" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
 
-        <p class="hidden" id="p2">Jeg har engasjert meg for koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet jeg med HTML og CSS, men i løpet av kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
+        <p class="hidden p" id="p2">Jeg har engasjert meg for koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet jeg med HTML og CSS, men i løpet av kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
 
-        <p class="hidden" id="p3">Personlig er jeg veldig interessert i sport, spiller sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, og eventuelt sjakk puzzles på kvelden for å koble av fra prosjektene.</p>
+        <p class="hidden p" id="p3">Personlig er jeg veldig interessert i sport, spiller sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, og eventuelt sjakk puzzles på kvelden for å koble av fra prosjektene.</p>
       </article>
     </div>
 
     <!-- PROJECTS PAGE -->
     <div id="projects-content" class="main-content hidden">
-          <div class="flex heart-container">
-            <form oninput="result.value=parseInt(rate.value)">
-              <input type="range" name="rate" id="rate" value="60" min="0" max="210">
-              <output id="rate-output" name="result" for="rate">60</output><br>
-              <label for="rate">Accurate speed of heart rate</label>
-            </form>
-            <div id="heart-element">
-              <div id="left"></div>
-              <div id="right"></div>
-              <div id="bottom"></div>
-            </div>
-          </div>
-          <h2><a class="big-link" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
-          <div class="container-flex">
-            <div class="col">
-              <ul>
-                <li class="github-projects"><a href="https://github.com/mikael-kodehode/firstPythonGame" target="_blank">Python spill</a></li>
-                <li class="github-projects"><a href="https://mikael-kodehode.github.io/pltable/" target="_blank">Premier League tabell</a></li>
-                <li class="github-projects"><a href="https://mikael-kodehode.github.io/image-map-coords-updater/" target="_blank">Image-map coords updater</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="github-projects"><a href="https://github.com/mikael-kodehode/heart-rate-animation" target="_blank">Heartrate animation</a></li>
-                <li class="github-projects"><a href="https://mikael-kodehode.github.io/Caesar/" target="_blank">Parallax page - Caesar</a></li>
-                <li class="github-projects"><a href="https://github.com/mikael-kodehode/a-random-particle-generator" target="_blank">Random particle generator</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="github-projects"><a href="https://mikael-kodehode.github.io/Borderlands/" target="_blank">Parallax page - Borderlands</a></li>
-              <li class="github-projects"><a href="https://mikael-kodehode.github.io/time_tracking-dashboard/" target="_blank">En API fungerende oversikt over tidsbruk. Frontend Mentor copy challenge</a></li>
-            </ul>
-          </div>
+      <div class="flex heart-container">
+        <form oninput="result.value=parseInt(rate.value)">
+          <input type="range" name="rate" id="rate" value="60" min="0" max="210">
+          <output id="rate-output" name="result" for="rate">60</output><br>
+          <label for="rate">Accurate speed of heart rate</label>
+        </form>
+        <div id="heart-element">
+          <div id="left"></div>
+          <div id="right"></div>
+          <div id="bottom"></div>
         </div>
+      </div>
+      <h2><a class="big-link" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
+      <div class="container-flex col"></div>
+    </div>
+
     <!-- CV PAGE -->
     <div id="cv-content" class="main-content hidden">
       <div class="intro">
-        <h2>Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
+        <h2 id="cv-intro">Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
         <div class="container-flex">
           <div>
             <ul class="cv-ul left-li-group">
-              <li>Telefon</li>
-              <li>E-post</li>
-              <li>Språk</li>
+              <li class="contact-title">Telefon</li>
+              <li class="contact-title">E-post</li>
+              <li class="contact-title">Språk</li>
             </ul>
           </div>
           <div>
             <ul class="cv-ul">
-              <li>479 04 989</li>
-              <li>mikael.odegaard@gmail.com</li>
-              <li>Norsk, Engelsk</li>
+              <li class="contact-details">479 04 989</li>
+              <li class="contact-details">mikael.odegaard@gmail.com</li>
+              <li class="contact-details">Norsk, Engelsk</li>
             </ul>
           </div>
         </div>
@@ -143,15 +125,15 @@
       <div class="paragraph main-article" id="experience">
         <div class="experience-nav">
           <ul class="p-nav-ul">
-            <li class="p-nav-list active-p" id="exp-1">Epinion</li>
-            <li class="p-nav-list" id="exp-2">Bunnpris</li>
-            <li class="p-nav-list" id="exp-3">Norstat</li>
-            <li class="p-nav-list" id="exp-4">UniCall</li>
-            <li class="p-nav-list" id="exp-5">Tele Connect</li>
+            <li class="p-nav-list active-p exp" id="exp-1">Epinion</li>
+            <li class="p-nav-list exp" id="exp-2">Bunnpris</li>
+            <li class="p-nav-list exp" id="exp-3">Norstat</li>
+            <li class="p-nav-list exp" id="exp-4">UniCall</li>
+            <li class="p-nav-list exp" id="exp-5">Tele Connect</li>
           </ul>
         </div>
         <div>
-          <div id="epinion">
+          <div class="employer" id="epinion">
             <p>
             Mar '18 - Apr '20 <br><br>
             Epinion Norge AS avd. Stavanger <br>
@@ -167,7 +149,7 @@
               <li>Avløse skiftledere</li>
             </ul>
           </div>
-          <div class="hidden" id="bunnpris">
+          <div class="hidden employer" id="bunnpris">
             <p>
             Des '17 - Feb '19 <br><br>
             Bunnpris Bragetunet <br>
@@ -181,7 +163,7 @@
               <li>PostNord MyPack pakkeutlevering</li>
             </ul>
           </div>
-          <div class="hidden" id="norstat">
+          <div class="hidden employer" id="norstat">
             <p>
             Feb '13 - Mai '15 <br><br>
             Norstat Lillehammer AS <br>
@@ -193,7 +175,7 @@
               <li>Rekruteringer av personer til fokusgrupper</li>
             </ul>
           </div>
-          <div class="hidden" id="unicall">
+          <div class="hidden employer" id="unicall">
             <p>
             Aug '12 - Jan '13 <br><br>
             UniCall Lillehammer AS <br>
@@ -204,7 +186,7 @@
               <li>Oppsøkende salg</li>
             </ul>
           </div>
-          <div class="hidden" id="tele-connect">
+          <div class="hidden employer" id="tele-connect">
             <p>
             Jan '12 - Mai '12 <br><br>
             Tele Connect Gjøvik AS <br>

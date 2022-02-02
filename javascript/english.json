@@ -14,7 +14,7 @@
       "description": "Personally I am very much interested in all sorts of sports. I play chess everyday and I love puzzles like sudoku, hitori, nonogram and kakuro. And also chess puzzles to break away from working."
     }
   ],
-  "project-title": "Github projects",
+  "projectTitle": "Github projects",
   "projects": [
     {
       "title": "Python game",

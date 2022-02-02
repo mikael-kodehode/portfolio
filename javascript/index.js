@@ -1,57 +1,116 @@
 const homeBtn = document.querySelector("#home")
 const projectsBtn = document.getElementById("projects")
 const cvBtn = document.getElementById("cv")
+const navBtns = document.querySelectorAll(".nav-link")
+
 const firstPBtn = document.querySelector("#first-p")
 const secondPBtn = document.querySelector("#second-p")
 const thirdPBtn = document.querySelector("#third-p")
+const pBtns = document.querySelectorAll(".p-btn")
+
 const exp1 = document.querySelector("#exp-1")
 const exp2 = document.querySelector("#exp-2")
 const exp3 = document.querySelector("#exp-3")
 const exp4 = document.querySelector("#exp-4")
 const exp5 = document.querySelector("#exp-5")
+const exp = document.querySelectorAll(".exp")
+
 const expLi = document.querySelector("#exp-li")
 const eduLi = document.querySelector("#edu-li")
 const miscLi = document.querySelector("#misc-li")
+const cvBtns = document.querySelectorAll(".cv-nav-li")
 
 const homeEl = document.getElementById("home-content")
 const projectsEl = document.getElementById("projects-content")
 const cvEl = document.getElementById("cv-content")
+const contents = document.querySelectorAll(".main-content")
+
 const firstPEl = document.querySelector("#p1")
 const secondPEl = document.querySelector("#p2")
 const thirdPEl = document.querySelector("#p3")
+const pEls = document.querySelectorAll(".p")
+
 const epinionEl = document.querySelector("#epinion")
 const bunnprisEl = document.querySelector("#bunnpris")
 const norstatEl = document.querySelector("#norstat")
 const unicallEl = document.querySelector("#unicall")
 const teleConnectEl = document.querySelector("#tele-connect")
+const employerEls = document.querySelectorAll(".employer")
+
 const expEl = document.querySelector("#experience")
 const eduEl = document.querySelector("#education")
 const miscEl = document.querySelector("#misc-el")
+const cvTabs = document.querySelectorAll(".main-article")
 
-let language = "english"
+const cubeEls = document.querySelectorAll(".cube__face")
+const conTit = document.querySelectorAll(".contact-title")
+const conDet = document.querySelectorAll(".contact-details")
 
-fetch("../jsons/english.json")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(e => console.log(e))
-async function pushLanguage(language) {
+const projectsContainer = document.querySelector(".col")
 
-  const res = await fetch(`${language}.json`)
+async function getLanguage(language) {
+  const res = await fetch(`../javascript/${language}.json`)
   const data = await res.json()
   console.log(data)
+  return data
 }
 
+function pushProject(data) {
+  const project = document.createElement("p")
+  project.classList.add("github-projects")
+  project.innerHTML = `<a href="${data.url}" target=_blank">${data.title}</a>`
+  projectsContainer.append(project)
+}
 
+function pushEmployers(data) {
+  const p = document.createElement("p")
+  const ul = document.createElement("ul")
+  const li = document.createELement("li")
+  for (x of data.cv.experience) {
+    p.innerHTML = `${x.}`
+  }
+}
 
+function pushLanguage(data) {
+  document.querySelector("#title").textContent = data.title
 
+  for (let x = 0; x < navBtns.length;x++) {
+    navBtns[x].textContent = data.nav[x]
+    cvBtns[x].textContent = data.cv.nav[x]
+    pEls[x].textContent = data.paragraphs[x].description
+    conTit[x].textContent = data.cv.contacts[x].title
+    conDet[x].textContent = data.cv.contacts[x].details
+  }
 
+  for (let x = 0; x < cubeEls.length; x++) {
+    cubeEls[x].textContent = data.cube[x]
+  }
 
+  document.querySelector(".big-link").textContent = data.projectTitle
+  projectsContainer.innerHTML = ""
+  data.projects.forEach(pushProject)
 
+  document.querySelector("#cv-intro").innerHTML = `${data.cv.title}`
+  document.querySelector(".small-text").innerHTML = `${data.footer[0]}<br>${data.footer[1]}`
+}
 
+function getData(data) {
+  switch (data) {
+    case english:
+      getLanguage("english")
+      .then(pushLanguage)
+      .catch(e => console.log(e))
+      break
+    case norwegian:
+      getLanguage("norwegian")
+      .then(pushLanguage)
+      .catch(e => console.log(e))
+      break
+  }
+}
 
-
-
-
+document.querySelector("#english").addEventListener("click", () =>   {getData(english)})
+document.querySelector("#norwegian").addEventListener("click", () => {getData(norwegian)})
 
 
 
@@ -104,6 +163,8 @@ function removeActiveCV() {
   eduLi.classList.remove("active-page")
   miscLi.classList.remove("active-page")
 }
+
+// Event listeners
 homeBtn.addEventListener("click", function() {
     removeContent()
     homeBtn.classList.add("active-page")
@@ -190,6 +251,7 @@ miscLi.addEventListener("click", function() {
   miscEl.classList.remove("hidden")
   miscLi.classList.add("active-page")
 })
+
 // Heartrate simulator
 const rate = document.querySelector("#rate");
 const heartEl = document.querySelector("#heart-element")

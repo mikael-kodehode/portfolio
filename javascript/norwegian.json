@@ -2,7 +2,6 @@
   "title": "Mikael Svartrud Ødegaard",
   "nav": ["Hjem", "Prosjekter", "CV"],
   "cube": ["Systematisk", "Punktlig", "Løsningsorientert", "Ansvarsbevisst", "Imøtekommende", "Effektiv"],
-  "project-title": "Github prosjekter",
   "paragraphs": [
     {
       "title": "I",
@@ -15,6 +14,7 @@
       "description": "Personlig er jeg veldig interessert i sport, spiller sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, og eventuelt sjakk puzzles på kvelden for å koble av fra prosjektene."
     }
   ],
+  "projectTitle": "Github prosjekter",
   "projects": [
     {
       "title": "Python spill",
