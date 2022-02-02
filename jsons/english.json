@@ -1,0 +1,108 @@
+{
+  "title": "Mikael Svartrud Odegaard",
+  "nav": ["Home", "Projects", "CV"],
+  "cube": ["Systematic", "Precise", "Determined", "Responsible", "Helpful", "Effective"],
+  "paragraphs": [
+    {
+      "title": "I",
+      "description": "My name is Mikael Odegaard. After working with customers for over 2500 working hours I have adopted great skill in professional communication and servicing customers. Due to my generation growing up with technology I started loving computer gaming when I was 5 years old. Through my childhood my dad loved to make Excel sheets with schedules and lists, forms and models with me so I naturally started making them myself when I got my first laptop at 13. At my former workplace I created systems with Excel for us to be more effective and organized. "
+    }, {
+      "title": "II",
+      "description": "I have coded on and off since 2016, but I started for real in 2021 when I joined a course by Jobloop (thank you). In 2016 I started with HTML5 and CSS3 self teaching which was hard, but fun. However during the course with Jobloop my interests swung towards Javascript and Python. I am clearly more of a programmer than a designer, but I can still work with CSS. Especially CSS and JS together."
+    }, {
+      "title": "III",
+      "description": "Personally I am very much interested in all sorts of sports. I play chess everyday and I love puzzles like sudoku, hitori, nonogram and kakuro. And also chess puzzles to break away from working."
+    }
+  ],
+  "project-title": "Github projects",
+  "projects": [
+    {
+      "title": "Python game",
+      "url": "https://github.com/mikael-kodehode/firstPythonGame"
+    }, {
+      "title": "Premier League table",
+      "url": "https://mikael-kodehode.github.io/pltable/"
+    }, {
+      "title": "Image-map coords updater",
+      "url": "https://mikael-kodehode.github.io/image-map-coords-updater/"
+    }, {
+      "title": "Heartrate animation",
+      "url": "https://github.com/mikael-kodehode/heart-rate-animation"
+    }, {
+      "title": "Parallax page - Caesar",
+      "url": "https://mikael-kodehode.github.io/Caesar/"
+    }, {
+      "title": "Random particle generator",
+      "url": "https://github.com/mikael-kodehode/a-random-particle-generator"
+    }, {
+      "title": "Parallax page - Borderlands",
+      "url": "https://mikael-kodehode.github.io/Borderlands/"
+    }, {
+      "title": "A functioning API timing tracker. A Frontend Mentor copy challenge",
+      "url": "https://mikael-kodehode.github.io/time_tracking-dashboard/"
+    }
+  ],
+  "cv": {
+    "title": "Serviceminded - Creative - Solutions oriented",
+    "contacts": [
+      {
+        "title": "Phone",
+        "details": "479 04 989"
+      }, {
+        "title": "E-mail",
+        "details": "mikael.odegaard@gmail.com"
+      }, {
+        "title": "Languages",
+        "details": "Norwegian, English"
+      }
+    ],
+    "nav": ["Experience", "Education", "Courses/voluntary work"],
+    "experience": [
+      {
+        "nav-name": "Epinion",
+        "date": "Mar '18 - Apr '20",
+        "company-name": "Epinion Norge AS avd. Stavanger",
+        "title": "Administration - Interviewer",
+        "description": ["Collecting data", "Interviewing", "Market research according to The Norwegian Marketing association's guidelines", "SPSS Dimension", "Administrative work to support supervisors and step in as temporary supervisor when needed", "Responsible for all hotline communication by phone and email"]
+      }, {
+        "nav-name": "Bunnpris",
+        "date": "Dec '17 - Feb '19",
+        "company-name": "Bunnpris Bragetunet",
+        "title": "Store employee",
+        "description": ["Customer service", "Handling wares", "Marketing", "PostNord MyPack storage"]
+      }, {
+        "nav-name": "Norstat",
+        "date": "Feb '13 - May '15",
+        "company-name": "Norstat Lillehammer AS",
+        "title": "Interviewer",
+        "description": ["Interviewing face to face", "Interviews over the phone", "Recruiting to focusgroups"]
+      }, {
+        "nav-name": "UniCall",
+        "date": "Aug '12 - Jan '13",
+        "company-name": "UniCall Lillehammer AS",
+        "title": "Phonesalesman",
+        "description": ["Customer care", "Outreach sales"]
+      }, {
+        "nav-name": "Tele Connect",
+        "date": "Jan '12 - Mai '12",
+        "company-name": "Tele Connect Gjøvik AS",
+        "title": "Phonesalesman",
+        "description": ["Customer care", "Outreach sales"]
+      }
+    ],
+    "education": [
+      {
+        "date": "Jan '13 - Jun '13",
+        "name": "Lillehammer videregående skole",
+        "study": "General studies - Economy, marketing and social studies"
+      }, {
+        "date": "Aug '10 - Jan '13",
+        "name": "Gjøvik videregående skole",
+        "study": "General studies - Economy, marketing and social studies"
+      }
+    ],
+    "courses": ["Licensed Security guard"],
+    "volunteer": ["ordland Music Festival and Canal Street festival", "Security guard at Skjærgårds Music and Mission for 4 years", "Polarparty LAN in Tønsberg"]
+  },
+  "footer": ["Created by Mikael Svartrud Odegaard", "References, certificates and diplomas delivered by demand"]
+}
