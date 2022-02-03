@@ -61,7 +61,7 @@ function pushProject(data) {
   project.innerHTML = `<a href="${data.url}" target=_blank">${data.title}</a>`
   projectsContainer.append(project)
 }
-
+/*
 function pushEmployers(data) {
   const p = document.createElement("p")
   const ul = document.createElement("ul")
@@ -70,7 +70,7 @@ function pushEmployers(data) {
     p.innerHTML = `${x.}`
   }
 }
-
+*/
 function pushLanguage(data) {
   document.querySelector("#title").textContent = data.title
 
