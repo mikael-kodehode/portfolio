@@ -47,6 +47,7 @@ const conTit = document.querySelectorAll(".contact-title")
 const conDet = document.querySelectorAll(".contact-details")
 
 const projectsContainer = document.querySelector(".col")
+const pNavUl = document.querySelector("#employers")
 
 async function getLanguage(language) {
   const res = await fetch(`../javascript/${language}.json`)
@@ -61,16 +62,25 @@ function pushProject(data) {
   project.innerHTML = `<a href="${data.url}" target=_blank">${data.title}</a>`
   projectsContainer.append(project)
 }
-/*
+
+function pushEmployerNav(data) {
+  const nameArray = []
+  for (x of data.cv.experience) {
+    nameArray.append(`<li class="p-nav-list exp">${x.navName}</li>`)
+  }
+}
+
 function pushEmployers(data) {
   const p = document.createElement("p")
   const ul = document.createElement("ul")
-  const li = document.createELement("li")
+  const li = document.createElement("li")
   for (x of data.cv.experience) {
-    p.innerHTML = `${x.}`
+    pNavUl.innerHTML += `<li class="p-nav-list exp" id="exp-2">${x.navName}</li>`
+    console.log(x.title)
+
   }
 }
-*/
+
 function pushLanguage(data) {
   document.querySelector("#title").textContent = data.title
 
@@ -111,7 +121,7 @@ function getData(data) {
 
 document.querySelector("#english").addEventListener("click", () =>   {getData(english)})
 document.querySelector("#norwegian").addEventListener("click", () => {getData(norwegian)})
-
+getData(norwegian)
 
 
 

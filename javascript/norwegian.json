@@ -59,31 +59,31 @@
     "nav": ["Erfaring", "Utdannelse", "Kurs/verv"],
     "experience": [
       {
-        "nav-name": "Epinion",
+        "navName": "Epinion",
         "date": "Mar '18 - Apr '20",
         "company-name": "Epinion Norge AS avd. Stavanger",
         "title": "Administrasjonsmedarbeider - Telefonintervjuer",
         "description": ["Datainnsamling", "Intervjuarbeid", "Markedsundersøkelser i henhold til Norsk Markedsanalyseforenings retningslinjer", "SPSS Dimension", "Administrativt arbeid for å avlaste skiftledere", "Besvare kundehenvendelser via telefon og e-post", "Avløse skiftledere"]
       }, {
-        "nav-name": "Bunnpris",
+        "navName": "Bunnpris",
         "date": "Des '17 - Feb '19",
         "company-name": "Bunnpris Bragetunet",
         "title": "Butikkmedarbeider",
         "description": ["Kundebehandling", "Kassearbeid", "Forefallende butikkarbeid", "Markedsføring", "PostNord MyPack pakkeutlevering og lagring"]
       }, {
-        "nav-name": "Norstat",
+        "navName": "Norstat",
         "date": "Feb '13 - Mai '15",
         "company-name": "Norstat Lillehammer AS",
         "title": "Intervjuer",
         "description": ["Intervju ansikt til ansikt", "Telefonintervju", "Rekruteringer av personer til fokusgrupper"]
       }, {
-        "nav-name": "UniCall",
+        "navName": "UniCall",
         "date": "Aug '12 - Jan '13",
         "company-name": "UniCall Lillehammer AS",
         "title": "Telefonselger",
         "description": ["Kundebehandling", "Oppsøkende salg"]
       }, {
-        "nav-name": "Tele Connect",
+        "navName": "Tele Connect",
         "date": "Jan '12 - Mai '12",
         "company-name": "Tele Connect Gjøvik AS",
         "title": "Telefonselger",
