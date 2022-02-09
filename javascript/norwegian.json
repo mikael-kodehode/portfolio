@@ -1,0 +1,108 @@
+{
+  "title": "Mikael Svartrud Ødegaard",
+  "nav": ["Hjem", "Prosjekter", "CV"],
+  "cube": ["Systematisk", "Punktlig", "Løsningsorientert", "Ansvarsbevisst", "Imøtekommende", "Effektiv"],
+  "paragraphs": [
+    {
+      "title": "I",
+      "description": "Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel."
+    }, {
+      "title": "II",
+      "description": "Jeg har engasjert meg for koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet jeg med HTML og CSS, men i løpet av kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby."
+    }, {
+      "title": "III",
+      "description": "Personlig er jeg veldig interessert i sport, spiller sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, og eventuelt sjakk puzzles på kvelden for å koble av fra prosjektene."
+    }
+  ],
+  "projectTitle": "Github prosjekter",
+  "projects": [
+    {
+      "title": "Python spill",
+      "url": "https://github.com/mikael-kodehode/firstPythonGame"
+    }, {
+      "title": "Premier League tabell",
+      "url": "https://mikael-kodehode.github.io/pltable/"
+    }, {
+      "title": "Image-map coords updater",
+      "url": "https://mikael-kodehode.github.io/image-map-coords-updater/"
+    }, {
+      "title": "Heartrate animation",
+      "url": "https://github.com/mikael-kodehode/heart-rate-animation"
+    }, {
+      "title": "Parallax page - Caesar",
+      "url": "https://mikael-kodehode.github.io/Caesar/"
+    }, {
+      "title": "Random particle generator",
+      "url": "https://github.com/mikael-kodehode/a-random-particle-generator"
+    }, {
+      "title": "Parallax page - Borderlands",
+      "url": "https://mikael-kodehode.github.io/Borderlands/"
+    }, {
+      "title": "En API fungerende oversikt over tidsbruk. Frontend Mentor copy challenge",
+      "url": "https://mikael-kodehode.github.io/time_tracking-dashboard/"
+    }
+  ],
+  "cv": {
+    "title": "Serviceinnstilt - Løsningsorientert - Initiativrik",
+    "contacts": [
+      {
+        "title": "Mobil",
+        "details": "479 04 989"
+      }, {
+        "title": "E-post",
+        "details": "mikael.odegaard@gmail.com"
+      }, {
+        "title": "Språk",
+        "details": "Norsk, engelsk"
+      }
+    ],
+    "nav": ["Erfaring", "Utdannelse", "Kurs/verv"],
+    "experience": [
+      {
+        "navName": "Epinion",
+        "date": "Mar '18 - Apr '20",
+        "company-name": "Epinion Norge AS avd. Stavanger",
+        "title": "Administrasjonsmedarbeider - Telefonintervjuer",
+        "description": ["Datainnsamling", "Intervjuarbeid", "Markedsundersøkelser i henhold til Norsk Markedsanalyseforenings retningslinjer", "SPSS Dimension", "Administrativt arbeid for å avlaste skiftledere", "Besvare kundehenvendelser via telefon og e-post", "Avløse skiftledere"]
+      }, {
+        "navName": "Bunnpris",
+        "date": "Des '17 - Feb '19",
+        "company-name": "Bunnpris Bragetunet",
+        "title": "Butikkmedarbeider",
+        "description": ["Kundebehandling", "Kassearbeid", "Forefallende butikkarbeid", "Markedsføring", "PostNord MyPack pakkeutlevering og lagring"]
+      }, {
+        "navName": "Norstat",
+        "date": "Feb '13 - Mai '15",
+        "company-name": "Norstat Lillehammer AS",
+        "title": "Intervjuer",
+        "description": ["Intervju ansikt til ansikt", "Telefonintervju", "Rekruteringer av personer til fokusgrupper"]
+      }, {
+        "navName": "UniCall",
+        "date": "Aug '12 - Jan '13",
+        "company-name": "UniCall Lillehammer AS",
+        "title": "Telefonselger",
+        "description": ["Kundebehandling", "Oppsøkende salg"]
+      }, {
+        "navName": "Tele Connect",
+        "date": "Jan '12 - Mai '12",
+        "company-name": "Tele Connect Gjøvik AS",
+        "title": "Telefonselger",
+        "description": ["Kundebehandling", "Oppsøkende salg"]
+      }
+    ],
+    "education": [
+      {
+        "date": "Jan '13 - Jun '13",
+        "name": "Lillehammer videregående skole",
+        "study": "Studiespesialisering - Økonomi, markedsføring og samfunnsfag"
+      }, {
+        "date": "Aug '10 - Jan '13",
+        "name": "Gjøvik videregående skole",
+        "study": "Studiespesialisering - Økonomi, markedsføring og samfunnsfag"
+      }
+    ],
+    "courses": ["Vekterkurs trinn 1-3"],
+    "volunteer": ["Frivillig vakt/medarbieder på diverse festivaler, blant annet Nordland Musikkfestuke og Canal Street i Arendal", "Frivillig sikkerhetsvakt på Skjærgårds Music and Mission Festival i 4 år", "Frivillig arbeider på Polarparty LAN i Tønsberg"]
+  },
+  "footer": ["Laget av Mikael Svartrud Ødegaard", "Referanser, attester og vitnemål gis ved etterspørsel"]
+}
