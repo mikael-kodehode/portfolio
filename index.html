@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mikael Svartrud Ødegaard</title>
+  <title>Mikael Svartrud Odegaard</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,13 @@
     <button type="button" id="norwegian">Norwegian</button>
     <div>
       <h1 id="title">Mikael Svartrud Ødegaard</h1>
+    
     </div>
     <nav>
       <ul class="nav-ul">
-        <li class="nav-list"><a id="home" class="nav-link active-page" href="#">Hjem</a></li>
-        <li class="nav-list"><a id="projects" class="nav-link" href="#">Prosjekter</a></li>
-        <li class="nav-list"><a id="cv" class="nav-link" href="#">CV</a></li>
+        <li class="nav-list"><a id="home" class="nav-link active-page" href="#">Home</a></li>
+        <li class="nav-list"><a id="projects" class="nav-link" href="#">        Projects</a></li>
+        <li class="nav-list"><a id="cv" class="nav-link" href="#">              CV</a></li>
       </ul>
     </nav>
   </header>
@@ -33,32 +34,32 @@
     <div id="home-content" class="main-content">
       <div class="scene">
         <div class="cube">
-          <div class="cube__face cube__face--front">Systematisk</div>
-          <div class="cube__face cube__face--back">Løsningsorientert</div>
-          <div class="cube__face cube__face--right">Punktlig</div>
-          <div class="cube__face cube__face--left">Ansvarsbevisst</div>
-          <div class="cube__face cube__face--top">Imøtekommende</div>
-          <div class="cube__face cube__face--bottom">Effektiv</div>
+          <div class="cube__face cube__face--front"> Systematic</div>
+          <div class="cube__face cube__face--back">  Precise</div>
+          <div class="cube__face cube__face--right"> Determined</div>
+          <div class="cube__face cube__face--left">  Responsible</div>
+          <div class="cube__face cube__face--top">   Helpful</div>
+          <div class="cube__face cube__face--bottom">Effective</div>
         </div>
       </div>
       <p class="radio-group">
       <label>
-        <input type="radio" name="rotate-cube-side" value="front" checked /> front
+        <input type="radio" name="rotate-cube-side" value="front" checked /> Front
       </label>
       <label>
-        <input type="radio" name="rotate-cube-side" value="right" /> right
+        <input type="radio" name="rotate-cube-side" value="right" /> Right
       </label>
       <label>
-        <input type="radio" name="rotate-cube-side" value="back" /> back
+        <input type="radio" name="rotate-cube-side" value="back" /> Back
       </label><br>
       <label>
-        <input type="radio" name="rotate-cube-side" value="left" /> left
+        <input type="radio" name="rotate-cube-side" value="left" /> Left
       </label>
       <label>
-        <input type="radio" name="rotate-cube-side" value="top" /> top
+        <input type="radio" name="rotate-cube-side" value="top" /> Top
       </label>
       <label>
-        <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+        <input type="radio" name="rotate-cube-side" value="bottom" /> Bottom
       </label><br>
       </p>
       <article class="paragraph">
@@ -67,16 +68,19 @@
           <li class="p-nav-list p-btn" id="second-p">II</li>
           <li class="p-nav-list p-btn" id="third-p">III</li>
         </ul>
+
         <p class="p" id="p1">Jeg heter Mikael Ødegaard. Etter mer enn 2500 arbeidstimer med service og kundekontakt har jeg blitt erfaren i profesjonell kommunikasjon og blitt opptatt av å tilfredsstille folks behov. På grunn av min generasjon har jeg hatt en kjærlighet for data siden jeg var 5 år gammel. Spillene var simplere, men mer imponerende. Gjennom hele barndommen hjalp min far meg med å lage ting i Excel. Tabeller og planer etc. Så da jeg fikk min første laptop som 13 år begynte jeg selv med å lage modeller og tabeller i Excel.</p>
 
         <p class="hidden p" id="p2">Jeg har engasjert meg for koding siden 2016, men begynte for alvor 2021 som følge av at jeg fikk være med på et kurs. (Takk til Jobloop).. I 2016 startet jeg med HTML og CSS, men i løpet av kurset økte interessen gradvis mot Python og Javascript. Jeg har mange prosjekter som jeg jobber med på fritiden så jeg kan vel kalle koding en hobby.</p>
 
         <p class="hidden p" id="p3">Personlig er jeg veldig interessert i sport, spiller sjakk hver dag og driver med tallpuzzles som sudoku, hitori, nonogram og kakuro, og eventuelt sjakk puzzles på kvelden for å koble av fra prosjektene.</p>
+
       </article>
     </div>
 
     <!-- PROJECTS PAGE -->
     <div id="projects-content" class="main-content hidden">
+
       <div class="flex heart-container">
         <form oninput="result.value=parseInt(rate.value)">
           <input type="range" name="rate" id="rate" value="60" min="0" max="210">
@@ -87,6 +91,8 @@
           <div id="left"></div>
           <div id="right"></div>
           <div id="bottom"></div>
+
+
         </div>
       </div>
       <h2><a class="big-link" href="http://github.com/mikael-kodehode" target="_blank">Github prosjekter</a></h2>
@@ -96,6 +102,7 @@
     <!-- CV PAGE -->
     <div id="cv-content" class="main-content hidden">
       <div class="intro">
+
         <h2 id="cv-intro">Serviceinnstilt - Løsningsorientert - Initiativrik</h2>
         <div class="container-flex">
           <div>
@@ -103,22 +110,25 @@
               <li class="contact-title">Telefon</li>
               <li class="contact-title">E-post</li>
               <li class="contact-title">Språk</li>
+
             </ul>
           </div>
           <div>
             <ul class="cv-ul">
+
               <li class="contact-details">479 04 989</li>
               <li class="contact-details">mikael.odegaard@gmail.com</li>
               <li class="contact-details">Norsk, Engelsk</li>
+
             </ul>
           </div>
         </div>
       </div> <!--closing cv intro-->
       <div>
         <ul id="cv-nav-ul">
-          <li id="exp-li" class="cv-nav-li active-page">Erfaring</li>
-          <li id="edu-li" class="cv-nav-li">Utdannelse</li>
-          <li id="misc-li" class="cv-nav-li">Kurs/Verv</li>
+          <li id="exp-li" class="cv-nav-li active-page">Experience</li>
+          <li id="edu-li" class="cv-nav-li">Education</li>
+          <li id="misc-li" class="cv-nav-li">Courses/Volunteer Work</li>
         </ul>
       </div>
       <!-- experience-->
@@ -137,64 +147,64 @@
             <p>
             Mar '18 - Apr '20 <br><br>
             Epinion Norge AS avd. Stavanger <br>
-            Administrasjonsmedarbeider - Telefonintervjuer
+            Administration - Interviewer
             </p>
             <ul>
-              <li>Datainnsamling</li>
-              <li>Intervjuarbeid</li>
-              <li>Markedsundersøkelser i henhold til Norsk Markedsanalyseforenings retningslinjer</li>
+              <li>Collecting data</li>
+              <li>Interviewing</li>
+              <li>Market research according to The Norwegian Marketing association's guidelines</li>
               <li>SPSS Dimension</li>
-              <li>Administrativt arbeid for å avlaste skiftledere</li>
-              <li>Besvare kundehenvendelser via telefon og e-post</li>
-              <li>Avløse skiftledere</li>
+              <li>Administrative work to support supervisors and step in as temporary supervisor when needed</li>
+              <li>Responsible for all hotline communication by phone and email</li>
             </ul>
           </div>
           <div class="hidden employer" id="bunnpris">
             <p>
-            Des '17 - Feb '19 <br><br>
+            Dec '17 - Feb '19 <br><br>
             Bunnpris Bragetunet <br>
-            Butikkmedarbeider
+            Store employee
             </p>
             <ul>
-              <li>Kundebehandling</li>
-              <li>Kassearbeid</li>
-              <li>Forefallende butikkarbeid</li>
-              <li>Markedsføring</li>
-              <li>PostNord MyPack pakkeutlevering</li>
+              <li>Customer service</li>
+              <li>Handling wares</li>
+              <li>Marketing</li>
+              <li>PostNord MyPack storage</li>
             </ul>
           </div>
           <div class="hidden employer" id="norstat">
             <p>
-            Feb '13 - Mai '15 <br><br>
+            Feb '13 - May '15 <br><br>
             Norstat Lillehammer AS <br>
-            Intervjuer
+            Interviewer
             </p>
             <ul>
-              <li>Intervju ansikt til ansikt</li>
-              <li>Telefonintervju</li>
-              <li>Rekruteringer av personer til fokusgrupper</li>
+              <li>Interviewing face to face</li>
+              <li>Interviews over the phone</li>
+              <li>Recruiting to focusgroups</li>
             </ul>
           </div>
           <div class="hidden employer" id="unicall">
             <p>
             Aug '12 - Jan '13 <br><br>
             UniCall Lillehammer AS <br>
-            Telefonselger
+            Phonesalesman
             </p>
             <ul>
-              <li>Kundebehandling</li>
-              <li>Oppsøkende salg</li>
+              <li>Customer care</li>
+              <li>Outreach sales</li>
             </ul>
           </div>
           <div class="hidden employer" id="tele-connect">
             <p>
+
             Jan '12 - Mai '12 <br><br>
             Tele Connect Gjøvik AS <br>
             Telefonselger
+
             </p>
             <ul>
-              <li>Kundebehandling</li>
-              <li>Oppsøkende salg</li>
+              <li>Customer care</li>
+              <li>Outreach sales</li>
             </ul>
           </div>
         </div>
@@ -204,24 +214,24 @@
         <p>
         Jan '13 - Jun '13 <br><br>
         Lillehammer videregående skole <br>
-        Studiespesialisering <br>
-        - Økonomi, markedsføring og samfunnsfag <br><br>
+        General studies <br>
+        - Economy, marketing and social studies <br><br>
         Aug '10 - Jan '13 <br><br>
         Gjøvik videregående skole <br>
-        Studiespesialisering <br>
-        - Øknomi, markedsføring og samfunnsfag
+        General studies <br>
+        - Economy, marketing and social studies
         </p>
       </div> <!--closing education-->
       <div class="paragraph main-article hidden" id="misc-el">
-        <h3>Kurs</h3>
+        <h3>Courses</h3>
         <ul>
-          <li>Vekterkurs trinn 1-3</li>
+          <li>Licensed Security guard</li>
         </ul>
-        <h3>Diverse verv i perioden 2010-2016</h3>
+        <h3>Volunteer work 2010-2016</h3>
         <ul>
-          <li>Frivillig vakt/medarbeider på diverse festivaler blant annet Nordland Musikkfestuke og Canal Street i Arendal</li>
-          <li>Frivillig sikkerhetsvakt på Skjærgårdsfestivalen i 4 år</li>
-          <li>Frivillig arbeider på Polarparty LAN i Tønsberg</li>
+          <li>Nordland Music Festival and Canal Street festival</li>
+          <li>Security guard at Skjærgårds Music and Mission for 4 years</li>
+          <li>Polarparty LAN in Tønsberg</li>
         </ul>
       </div>
     </div>
@@ -229,8 +239,8 @@
 
   <footer>
     <p class="small-text">
-      Laget av Mikael Svartrud Ødegaard <br>
-      Referanser, attester og vitnemål gis ved etterspørsel
+      Created by Mikael Svartrud Odegaard <br>
+      References, certificates and diplomas delivered by demand
     </p>
   </footer>
 
