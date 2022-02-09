@@ -207,12 +207,12 @@ article p {
   transition: transform 1s;
 }
 
-.cube.show-front  { transform: translateZ(-125px) rotateY(   0deg); }
-.cube.show-right  { transform: translateZ(-125px) rotateY( -90deg); }
-.cube.show-back   { transform: translateZ(-125px) rotateY(-180deg); }
-.cube.show-left   { transform: translateZ(-125px) rotateY(  90deg); }
-.cube.show-top    { transform: translateZ(-125px) rotateX( -90deg); }
-.cube.show-bottom { transform: translateZ(-125px) rotateX(  90deg); }
+.show-right  { transform: translateZ(-125px) rotateY( -90deg); }
+.show-front  { transform: translateZ(-125px) rotateY(   0deg); }
+.show-back   { transform: translateZ(-125px) rotateY(-180deg); }
+.show-left   { transform: translateZ(-125px) rotateY(  90deg); }
+.show-top    { transform: translateZ(-125px) rotateX( -90deg); }
+.show-bottom { transform: translateZ(-125px) rotateX(  90deg); }
 
 .cube__face {
   position: absolute;
