@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll(".btn")
 const mainNav = document.querySelectorAll(".nav-link")
 const pBtns = document.querySelectorAll(".p-btn")
 
-const cube = document.querySelectorAll(".cube__face")
+const cubeText = document.querySelectorAll(".cube__face")
 const homePs = document.querySelectorAll(".p")
 
 
