@@ -18,7 +18,8 @@
   "projects": [
     {
       "title": "Python game",
-      "url": "https://github.com/mikael-kodehode/firstPythonGame"
+      "url": "https://github.com/mikael-kodehode/firstPythonGame",
+      "github": "true"
     }, {
       "title": "Premier League table",
       "url": "https://mikael-kodehode.github.io/pltable/"
@@ -59,31 +60,31 @@
     "nav": ["Experience", "Education", "Courses/voluntary work"],
     "experience": [
       {
-        "nav-name": "Epinion",
+        "navName": "Epinion",
         "date": "Mar '18 - Apr '20",
         "company-name": "Epinion Norge AS avd. Stavanger",
         "title": "Administration - Interviewer",
         "description": ["Collecting data", "Interviewing", "Market research according to The Norwegian Marketing association's guidelines", "SPSS Dimension", "Administrative work to support supervisors and step in as temporary supervisor when needed", "Responsible for all hotline communication by phone and email"]
       }, {
-        "nav-name": "Bunnpris",
+        "navName": "Bunnpris",
         "date": "Dec '17 - Feb '19",
         "company-name": "Bunnpris Bragetunet",
         "title": "Store employee",
         "description": ["Customer service", "Handling wares", "Marketing", "PostNord MyPack storage"]
       }, {
-        "nav-name": "Norstat",
+        "navName": "Norstat",
         "date": "Feb '13 - May '15",
         "company-name": "Norstat Lillehammer AS",
         "title": "Interviewer",
         "description": ["Interviewing face to face", "Interviews over the phone", "Recruiting to focusgroups"]
       }, {
-        "nav-name": "UniCall",
+        "navName": "UniCall",
         "date": "Aug '12 - Jan '13",
         "company-name": "UniCall Lillehammer AS",
         "title": "Phonesalesman",
         "description": ["Customer care", "Outreach sales"]
       }, {
-        "nav-name": "Tele Connect",
+        "navName": "Tele Connect",
         "date": "Jan '12 - Mai '12",
         "company-name": "Tele Connect Gjøvik AS",
         "title": "Phonesalesman",

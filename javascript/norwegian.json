@@ -19,35 +19,35 @@
     {
       "title": "Python spill",
       "url": "https://github.com/mikael-kodehode/firstPythonGame",
-      "github": "true",
+      "github": "true"
     }, {
       "title": "Premier League tabell",
       "url": "https://mikael-kodehode.github.io/pltable/",
-      "github": "false",
+      "github": "false"
     }, {
       "title": "Image-map coords updater",
       "url": "https://mikael-kodehode.github.io/image-map-coords-updater/",
-      "github": "false",
+      "github": "false"
     }, {
       "title": "Heartrate animation",
       "url": "https://github.com/mikael-kodehode/heart-rate-animation",
-      "github": "true",
+      "github": "true"
     }, {
       "title": "Parallax page - Caesar",
       "url": "https://mikael-kodehode.github.io/Caesar/",
-      "github": "false",
+      "github": "false"
     }, {
       "title": "Random particle generator",
       "url": "https://github.com/mikael-kodehode/a-random-particle-generator",
-      "github": "true",
+      "github": "true"
     }, {
       "title": "Parallax page - Borderlands",
       "url": "https://mikael-kodehode.github.io/Borderlands/",
-      "github": "false",
+      "github": "false"
     }, {
       "title": "En API fungerende oversikt over tidsbruk. Frontend Mentor challenge",
       "url": "https://mikael-kodehode.github.io/time_tracking-dashboard/",
-      "github": "false",
+      "github": "false"
     }
   ],
   "cv": {
