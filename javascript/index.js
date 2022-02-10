@@ -1,4 +1,4 @@
-
+// Front page
 const buttons = document.querySelectorAll(".btn")
 const mainNav = document.querySelectorAll(".nav-link")
 const pBtns = document.querySelectorAll(".p-btn")
@@ -6,19 +6,38 @@ const pBtns = document.querySelectorAll(".p-btn")
 const cubeText = document.querySelectorAll(".cube__face")
 const homePs = document.querySelectorAll(".p")
 
-
-
 const footerText = document.querySelector(".small-text")
-console.log(homePs)
 
+// Page projects
+const projectsContainer = document.querySelector(".col)
 
+// Page cv
+const cvIntro = document.querySelector("#cv-intro")
+const contacts = document.querySelectorAll(".cv-ul")
+const cvNav = document.querySelectorAll(".cv-nav-li")
+// Experience
+const employersNav = document.querySelector("#employers")
+const employer = document.querySelectorAll(".employer")
+// Education
+const education = document.querySelector("#education")
+// Courses/Volunteers
+const miscEl.document.querySelector("#misc-el")
 
+async function getLanguage(language) {
+  const res = await fetch(`../javascript/${language}.json`)
+  const data = await res.json()
+  console.log(data)
+  return data
+}
 
-
-
-
-
-
+function pushProject(data) {
+  const project = document.createElement("p")
+  project.classList.add("github-projects")
+  if (data.github === true) {
+    project.innerHTML = `<a href="${data.url}" target=_blank">${data.title}</a>`
+  }
+  projectsContainer.append(project)
+}
 
 
 
