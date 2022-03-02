@@ -196,7 +196,7 @@ article p {
   position: relative;
   transform-style:preserve-3d;
   transform: translateZ(-125px);
-  transition: transform 1s;
+  transition: transform .5s;
 }
 
 .cube.show-front  { transform: translateZ(-125px) rotateY(   0deg); }
