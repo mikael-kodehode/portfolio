@@ -221,7 +221,7 @@ article p {
 .cube__face--left,
 .cube__face--top,
 .cube__face--bottom {
-  background: rgb(10, 8, 8);
+  background: rgba(10, 8, 8, .8);
   display: flex;
 }
 
