@@ -5,8 +5,8 @@
 
 body {
   margin: 0;
-  background-color: rgba(10, 8, 8, 1);
-  color: white;
+  background-color: #5f7470;
+  color: #B8BDB5;
   font-size: 0.8rem;
   letter-spacing: 2px;
   font-family: 'IBM Plex Sans Thai', sans-serif;
@@ -35,7 +35,12 @@ h3 {
   font-size: .6rem;
   padding-top: 2em;
 }
-
+.header--title {
+  padding-bottom: 0;
+}
+.header--subtitle {
+  margin-top: 0;
+}
 /* ---------------
     LAYOUT
 ------------------ */
@@ -63,12 +68,13 @@ h3 {
 
 .active-page {
   border-bottom: 2px solid white;
+  font-weight: 900;
 }
 
 /* HOME */
 .main-article {
   width: 90%;
-  background-color: rgb(85, 173, 23);
+  border-bottom: 1px solid #B8BDB5;
 }
 
 /* paragraph section */
@@ -84,21 +90,22 @@ h3 {
 }
 
 .active-p {
-  border-bottom: 2px solid black;
+  font-weight: 900;
 }
 
 .paragraph {
-  color: rgb(10, 8, 8);
+  color: inherit;
   margin: 0;
   padding: 1em 1.5em;
   line-height: 1.3rem;
   max-width: 450px;
-  transition: background-color 1s
+  /* transition: all 1s */
 }
 
-.paragraph:hover {
-  background-color:rgb(219, 235, 0)
-}
+/* .paragraph:hover {
+  background:inherit;
+  color: inherit;
+} */
 
 .main-content {
   display: flex;
@@ -119,17 +126,6 @@ h3 {
 article p {
   margin-bottom: 0;
 }
-.big-link {
-  color: rgba(161, 241, 0, 1);
-  transition: background-color 2s, color 1s;
-  padding: 0.8em;
-}
-
-.big-link:hover,
-.big-link:focus {
-  color:rgb(10, 8, 8);
-  background-color: rgba(161, 241, 0, 0.7);
-}
 #projects-content {
   margin-top: 2em;
 }
@@ -148,7 +144,7 @@ article p {
   color: white;
 }
 .github-projects a:visited:hover {
-  color: gray;
+  color: #D2D4C8;
 }
 .github-projects a:hover,
 .github-projects a:focus {
@@ -221,7 +217,7 @@ article p {
 .cube__face--left,
 .cube__face--top,
 .cube__face--bottom {
-  background: rgba(10, 8, 8, .8);
+  background: rgba(54, 57, 63 .8);
   display: flex;
 }
 
@@ -282,7 +278,6 @@ label { margin-right: 10px; }
 #heart-element {
   width: 200px;
   height: 0;
-  background: rgb(196, 32, 18);
   /* This makes me able to position the heart accuratively relative to the input range. It is built out of 3 div parts that are formed by rotating and border-radius.*/
   position: relative;
   transform-origin: center center;

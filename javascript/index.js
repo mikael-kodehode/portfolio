@@ -1,6 +1,7 @@
 const homeBtn = document.querySelector("#home")
 const projectsBtn = document.getElementById("projects")
 const cvBtn = document.getElementById("cv")
+const aboutBtn = document.querySelector("#om")
 const firstPBtn = document.querySelector("#first-p")
 const secondPBtn = document.querySelector("#second-p")
 const thirdPBtn = document.querySelector("#third-p")
@@ -16,6 +17,7 @@ const miscLi = document.querySelector("#misc-li")
 const homeEl = document.getElementById("home-content")
 const projectsEl = document.getElementById("projects-content")
 const cvEl = document.getElementById("cv-content")
+const aboutEl = document.querySelector("#om-content")
 const firstPEl = document.querySelector("#p1")
 const secondPEl = document.querySelector("#p2")
 const thirdPEl = document.querySelector("#p3")
@@ -32,6 +34,7 @@ function removeActivePage() {
     homeBtn.classList.remove("active-page")
     projectsBtn.classList.remove("active-page")
     cvBtn.classList.remove("active-page")
+    aboutBtn.classList.remove("active-page")
 }
 
 function removeActiveParagraph() {
@@ -45,6 +48,7 @@ function removeContent() {
     homeEl.classList.add("hidden")
     projectsEl.classList.add("hidden")
     cvEl.classList.add("hidden")
+    aboutEl.classList.add("hidden")
 }
 
 function removeP() {
@@ -92,6 +96,13 @@ cvBtn.addEventListener("click", function() {
     removeContent()
     cvBtn.classList.add("active-page")
     cvEl.classList.remove("hidden")
+})
+
+aboutBtn.addEventListener("click", () => {
+
+  removeContent()
+  aboutBtn.classList.add("active-page")
+  aboutEl.classList.remove("hidden")
 })
 
 firstPBtn.addEventListener("click", function() {
@@ -168,8 +179,10 @@ const heartEl = document.querySelector("#heart-element")
 
 rate.addEventListener("input", function() {
     let x = rate.value;
-    let y = (60 / x) 
-    heartEl.style.animation = "container ease-out " + y + "s infinite";
+    let y = (60 / x)
+    if (y) {
+      heartEl.style.animation = "container ease-out " + y + "s infinite";
+    }
 })
 
 const cube = document.querySelector('.cube');
