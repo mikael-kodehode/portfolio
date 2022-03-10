@@ -141,7 +141,7 @@ article p {
 }
 
 .github-projects a{
-  color: white;
+  color: #E0E2DB;
 }
 .github-projects a:visited:hover {
   color: #D2D4C8;
@@ -153,6 +153,10 @@ article p {
 .github-projects a:active {
   color: rgba(161, 241, 0, 1);
 }
+.github-logo {
+  background: white;
+  border-radius: 50%;
+}
 #cv-nav-ul {
   padding: 0;
 }
@@ -161,9 +165,8 @@ article p {
   margin: 0.5em;
   cursor: pointer;
 }
-.github-logo {
-  background: white;
-  border-radius: 50%;
+.experience-nav {
+  border-bottom: 1px solid;
 }
 
 @media (min-width: 700px) {
@@ -184,7 +187,7 @@ article p {
 }
 
 .scene {
-  margin: 10px;
+  margin: 2em;
   perspective: 400px;
 }
 
@@ -228,7 +231,26 @@ article p {
 .cube__face--top    { transform: rotateX( 90deg) translateZ(125px);}
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(125px); justify-content: space-around;}
 
-label { margin-right: 10px; }
+label {
+  margin-right: 10px;
+}
+.lightclr {
+  color: #E0E2DB;
+}
+input[type=radio] {
+  all: unset;
+}
+input[type=radio]:checked {
+  font-weight: 900;
+}
+.radio--label {
+  text-decoration: underline;
+}
+.radio--label:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
 
 .cube-img {
   width: 100%;

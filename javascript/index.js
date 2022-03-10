@@ -174,32 +174,32 @@ miscLi.addEventListener("click", function() {
   miscLi.classList.add("active-page")
 })
 // Heartrate simulator
-const rate = document.querySelector("#rate");
+const rate = document.querySelector("#rate")
 const heartEl = document.querySelector("#heart-element")
 
 rate.addEventListener("input", function() {
-    let x = rate.value;
+    let x = rate.value
     let y = (60 / x)
     if (y) {
-      heartEl.style.animation = "container ease-out " + y + "s infinite";
+      heartEl.style.animation = "container ease-out " + y + "s infinite"
     }
 })
 
-const cube = document.querySelector('.cube');
-const radioGroup = document.querySelector('.radio-group');
+const cube = document.querySelector('.cube')
+const radioGroup = document.querySelector('.radio-group')
 
-let currentClass = '';
+let currentClass = ''
 
 function changeSide() {
-  const checkedRadio = radioGroup.querySelector(':checked');
-  let showClass = 'show-' + checkedRadio.value;
+  const checkedRadio = radioGroup.querySelector(':checked')
+  let showClass = 'show-' + checkedRadio.value
   if (currentClass) {
-    cube.classList.remove(currentClass);
+    cube.classList.remove(currentClass)
   }
-  cube.classList.add(showClass);
-  currentClass = showClass;
+  cube.classList.add(showClass)
+  currentClass = showClass
 }
 // set initial side
-changeSide();
+changeSide()
 
-radioGroup.addEventListener('change', changeSide);
+radioGroup.addEventListener('change', changeSide)

@@ -42,22 +42,22 @@
         </div>
       </div>
       <p class="radio-group">
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="front" checked /> Frontend
       </label>
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="right" /> API
       </label>
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="back" /> Python
       </label><br>
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="left" /> React
       </label>
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="top" /> Django
       </label>
-      <label>
+      <label class="radio--label">
         <input type="radio" name="rotate-cube-side" value="bottom" /> Figma
       </label><br>
       </p>
@@ -68,8 +68,8 @@
           <div class="flex heart-container">
             <form oninput="result.value=parseInt(rate.value)">
               <input type="range" name="rate" id="rate" value="60" min="0" max="210">
-              <output id="rate-output" name="result" for="rate">60</output><br>
-              <label for="rate">Accurate speed of heart rate</label>
+              <output class="lightclr" id="rate-output" name="result" for="rate">60</output><span class="lightclr"> bpm</span><br>
+              <label class="lightclr" for="rate">Accurate speed of heart rate</label>
             </form>
             <div id="heart-element">
               <div id="left"></div>
