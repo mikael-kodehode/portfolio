@@ -189,15 +189,19 @@ const cube = document.querySelector('.cube')
 const radioGroup = document.querySelector('.radio-group')
 
 let currentClass = ''
-
+let currentRadio = ''
 function changeSide() {
   const checkedRadio = radioGroup.querySelector(':checked')
   let showClass = 'show-' + checkedRadio.value
+  let showRadio = document.querySelector(`#${checkedRadio.value}`)
   if (currentClass) {
     cube.classList.remove(currentClass)
+    currentRadio.classList.remove("active-page")
   }
   cube.classList.add(showClass)
+  showRadio.classList.add("active-page")
   currentClass = showClass
+  currentRadio = showRadio
 }
 // set initial side
 changeSide()

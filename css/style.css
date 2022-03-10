@@ -66,17 +66,20 @@ h3 {
   padding: .4em 0;
 }
 
-.active-page {
-  border-bottom: 2px solid white;
-  font-weight: 900;
-}
-
 /* HOME */
 .main-article {
   width: 90%;
   border-bottom: 1px solid #B8BDB5;
 }
-
+.codewars {
+  width: 200px;
+  border-radius: 20px;
+}
+.sm-links {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 /* paragraph section */
 .p-nav-ul {
   margin: 0;
@@ -157,6 +160,7 @@ article p {
   background: white;
   border-radius: 50%;
 }
+
 #cv-nav-ul {
   padding: 0;
 }
@@ -256,35 +260,40 @@ input[type=radio]:checked {
   width: 100%;
   align-self: center;
 }
+.active-page {
+  border-bottom: 2px solid white;
+  font-weight: 900;
+  text-decoration: none;
+}
 
 /*heartrate simulator*/
 
-#left,
-#right,
-#bottom {
+#heart--left,
+#heart--right,
+#heart--bottom {
   background: inherit;
   position: absolute;
 }
-#left,
-#right {
+#heart--left,
+#heart--right {
   width: 100px;
   height: 100px;
 }
-#right,
-#bottom {
+#heart--right,
+#heart--bottom {
   transform: rotate(45deg)
 }
-#left {
+#heart--left {
   border-radius: 0 0 100px 100px;
   transform: rotate(135deg);
 }
 
-#right {
+#heart--right {
   border-radius: 100px 100px 0 0;
   left: 100px;
 }
 
-#bottom {
+#heart--bottom {
   top: 84px;
   left: 64px;
   width: 72px;
