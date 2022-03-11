@@ -3,6 +3,10 @@
   /* border: red solid 2px; */
 }
 
+/*
+  Body min height 100vh and display flex to get
+  the footer to stay at the bottom
+*/
 body {
   margin: 0;
   background-color: #5f7470;
@@ -10,6 +14,13 @@ body {
   font-size: 0.8rem;
   letter-spacing: 2px;
   font-family: 'IBM Plex Sans Thai', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* ---------------
