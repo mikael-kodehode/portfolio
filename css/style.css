@@ -45,6 +45,10 @@ h3 {
     LAYOUT
 ------------------ */
 /* NAV */
+.active-page {
+  border-bottom: 2px solid white;
+  font-weight: 900;
+}
 
 .nav-ul {
   width: 20%;
@@ -254,16 +258,20 @@ input[type=radio]:checked {
   cursor: pointer;
   font-weight: 900;
 }
-
+.active-cube {
+  text-decoration: none;
+  font-weight: 900;
+}
+/* .active-cube:before {
+  content: '>'
+} */
+.active-cube:after {
+  content: '<'
+}
 
 .cube-img {
   width: 100%;
   align-self: center;
-}
-.active-page {
-  border-bottom: 2px solid white;
-  font-weight: 900;
-  text-decoration: none;
 }
 
 /*heartrate simulator*/

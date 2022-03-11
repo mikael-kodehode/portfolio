@@ -196,10 +196,10 @@ function changeSide() {
   let showRadio = document.querySelector(`#${checkedRadio.value}`)
   if (currentClass) {
     cube.classList.remove(currentClass)
-    currentRadio.classList.remove("active-page")
+    currentRadio.classList.remove("active-cube")
   }
   cube.classList.add(showClass)
-  showRadio.classList.add("active-page")
+  showRadio.classList.add("active-cube")
   currentClass = showClass
   currentRadio = showRadio
 }
