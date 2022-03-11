@@ -251,7 +251,7 @@ article p {
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(125px); justify-content: space-around;}
 
 label {
-  margin-right: 10px;
+  margin: 0 1em;
 }
 .lightclr {
   color: #E0E2DB;
@@ -262,9 +262,9 @@ input[type=radio] {
 input[type=radio]:checked {
   font-weight: 900;
 }
-.radio--label {
+/* .radio--label {
   text-decoration: underline;
-}
+} */
 .radio--label:hover {
   cursor: pointer;
   font-weight: 900;
@@ -272,13 +272,18 @@ input[type=radio]:checked {
 .active-cube {
   text-decoration: none;
   font-weight: 900;
+  position: relative;
 }
-/* .active-cube:before {
-  content: '>'
+.active-cube:before {
+  content: '>';
+  position: absolute;
+  top: -3%;
+  transform: translateX(-120%);
+}
+/* .active-cube:after {
+  content: '<';
+  position: absolute;
 } */
-.active-cube:after {
-  content: '<'
-}
 
 .cube-img {
   width: 100%;
